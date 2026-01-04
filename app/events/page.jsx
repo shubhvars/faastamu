@@ -57,8 +57,8 @@ export default function Events() {
                     <span className="px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-sm">Workshop</span>
                   </div>
 
-                  <a 
-                    href="https://drive.google.com/file/d/1Jl0q5gY7VSUgJjIvOmJYXxDOVTn2LJLD/view" 
+                  <a
+                    href="https://drive.google.com/file/d/1Jl0q5gY7VSUgJjIvOmJYXxDOVTn2LJLD/view"
                     className="inline-flex items-center gap-2 mt-6 text-cyan-400 hover:text-cyan-300 transition-colors group"
                   >
                     <span className="font-medium">View Event Report</span>
@@ -80,7 +80,7 @@ export default function Events() {
                 </div>
                 <h3 className="text-xl font-bold mb-2">More Exciting Events Coming Soon</h3>
                 <p className="text-gray-400 mb-4">
-                  We're working on bringing you more workshops, competitions, and learning opportunities.
+                  We&apos;re working on bringing you more workshops, competitions, and learning opportunities.
                 </p>
                 <div className="flex items-center justify-center gap-2">
                   <div className="w-2 h-2 rounded-full bg-yellow-400 animate-ping" />

@@ -1,5 +1,5 @@
 import React from "react";
-import { Code, Sparkles, Terminal, BarChart2, BookOpen, Zap, TrendingUp, Cpu, Database, Shield } from "lucide-react";
+import { Code, Sparkles, BarChart2, BookOpen, Zap, TrendingUp, Cpu, Database, Shield } from "lucide-react";
 
 const TeamSection = ({ title, icon: Icon, children }) => (
   <section className="mb-16">
@@ -18,16 +18,16 @@ const TeamSection = ({ title, icon: Icon, children }) => (
 const ProjectCard = ({ title, description, icon: Icon, iconColor = "text-cyan-400", tags = [], links = [] }) => (
   <div className="glass-panel rounded-2xl p-6 relative overflow-hidden border border-cyan-500/20 hover:border-cyan-500/40 transition-all h-full flex flex-col">
     <div className="absolute -top-4 -right-4 w-24 h-24 bg-cyan-500/5 rounded-full blur-3xl" />
-    
+
     <div className="flex items-start gap-4 mb-4">
       <div className={`p-3 rounded-lg bg-linear-to-br from-cyan-500/10 to-blue-600/10 border ${iconColor.replace('text-', 'border-')}/20`}>
         <Icon className={`w-6 h-6 ${iconColor}`} />
       </div>
       <h3 className="text-xl font-bold text-white">{title}</h3>
     </div>
-    
+
     <p className="text-gray-300 mb-4 flex-grow">{description}</p>
-    
+
     {tags.length > 0 && (
       <div className="flex flex-wrap gap-2 mb-4">
         {tags.map((tag, index) => (
@@ -37,7 +37,7 @@ const ProjectCard = ({ title, description, icon: Icon, iconColor = "text-cyan-40
         ))}
       </div>
     )}
-    
+
     {links.length > 0 && (
       <div className="mt-auto pt-4 border-t border-cyan-500/10">
         {links.map((link, index) => (
@@ -90,7 +90,7 @@ export default function Projects() {
             tags={["Web3", "Blockchain", "React", "Ethers.js"]}
             links={[{ label: "View Project", url: "https://github.com/prabalvarshney21/faastpay-wallet" }]}
           />
-          
+
           <ProjectCard
             title="FAAST QuantForge"
             icon={TrendingUp}
@@ -113,7 +113,7 @@ export default function Projects() {
             iconColor="text-yellow-400"
             tags={["Machine Learning", "Risk Assessment", "Quantitative Analysis"]}
           />
-          
+
           <ProjectCard
             title="Financial Time-Series Analysis"
             description="Comparative study of tabular and temporal models across different market regimes, enhanced with Genetic Algorithms and Artificial Rabbits Optimization for dynamic ensemble weighting."
@@ -144,7 +144,7 @@ export default function Projects() {
             iconColor="text-pink-400"
             tags={["Behavioral Finance", "Market Efficiency", "Social Trading"]}
           />
-          
+
           <ProjectCard
             title="DeFi Accountability"
             description="Critical examination of accountability in decentralized finance systems, exploring the challenges of governance, responsibility, and trust in a trustless environment."
